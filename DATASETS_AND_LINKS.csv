@@ -1,0 +1,7 @@
+dataset,role,url,redistribution_note
+GHSL,broad built-up context,https://ghsl.jrc.ec.europa.eu/,link only
+Overture Maps Buildings,building geometry release inputs,https://docs.overturemaps.org/guides/buildings/,link only
+Microsoft Global ML Building Footprints,source-audit candidate,https://github.com/microsoft/GlobalMLBuildingFootprints,link only
+CBRA,China-relevant future footprint source,https://zenodo.org/records/7500612,link only
+China sub-meter building footprints part 1,China-relevant future footprint source,https://zenodo.org/records/10473278,link only
+China sub-meter building footprints part 2,China-relevant future footprint source,https://zenodo.org/records/10475803,link only

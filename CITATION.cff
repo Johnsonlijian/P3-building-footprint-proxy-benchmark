@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: Source-audited uncertainty benchmark for open building-footprint carbon screening
+message: Please cite the associated manuscript if you use this package.
+type: software
+authors:
+  - family-names: "[author family name]"
+    given-names: "[author given name]"
+version: 0.18.0
+date-released: 2026-05-18
+repository-code: https://github.com/Johnsonlijian/P3-building-footprint-proxy-benchmark
