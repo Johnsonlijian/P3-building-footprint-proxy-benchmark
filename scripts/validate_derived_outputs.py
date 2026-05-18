@@ -11,8 +11,9 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-SUMMARY = ROOT / "outputs" / "derived_tables" / "shenzhen_proxy_demonstrator_summary.csv"
-QUANTILES = ROOT / "outputs" / "derived_tables" / "shenzhen_event_quantiles.csv"
+SUMMARY = ROOT / "outputs" / "derived_tables" / "shenzhen_full_vs_hash_sample_mc_summary.csv"
+TYPE_SUMMARY = ROOT / "outputs" / "derived_tables" / "shenzhen_full_inventory_type_summary.csv"
+COEFFICIENTS = ROOT / "outputs" / "derived_tables" / "lca_coefficient_table_v21.csv"
 
 
 def read_first(path: Path) -> dict[str, str]:
@@ -20,29 +21,38 @@ def read_first(path: Path) -> dict[str, str]:
         return next(csv.DictReader(f))
 
 
+def read_rows(path: Path) -> list[dict[str, str]]:
+    with path.open(newline="", encoding="utf-8") as f:
+        return list(csv.DictReader(f))
+
+
 def main() -> None:
-    row = read_first(SUMMARY)
-    required_counts = {
-        "removed_id_count_full": 76042,
-        "rows_written_export_cap": 8000,
+    rows = read_rows(SUMMARY)
+    by_label = {row["label"]: row for row in rows}
+    required = {
+        "full_inventory": (76042, 2181482),
+        "hash_sample_8000": (8000, 267095),
     }
-    for key, expected in required_counts.items():
-        observed = int(float(row.get(key, "nan")))
-        if observed != expected:
-            raise SystemExit(f"{key}: expected {expected}, observed {observed}")
-    mean = float(row["conditional_embodied_mean_tCO2e"])
-    if round(mean) != 181208:
-        raise SystemExit(f"conditional_embodied_mean_tCO2e: expected rounded 181208, observed {mean}")
-    if not QUANTILES.exists():
-        raise SystemExit(f"Missing quantile table: {QUANTILES}")
+    for label, (expected_rows, expected_mean) in required.items():
+        if label not in by_label:
+            raise SystemExit(f"Missing row: {label}")
+        row = by_label[label]
+        observed_rows = int(float(row["n_rows"]))
+        observed_mean = round(float(row["mean_tCO2e"]))
+        if observed_rows != expected_rows:
+            raise SystemExit(f"{label} n_rows: expected {expected_rows}, observed {observed_rows}")
+        if observed_mean != expected_mean:
+            raise SystemExit(f"{label} mean_tCO2e: expected rounded {expected_mean}, observed {observed_mean}")
+    for path in [TYPE_SUMMARY, COEFFICIENTS]:
+        if not path.exists():
+            raise SystemExit(f"Missing derived table: {path}")
     print("Derived output validation passed.")
-    print(f"Shenzhen capped rows: {row['rows_written_export_cap']} / {row['removed_id_count_full']}")
-    print(f"Conditional mean tCO2e: {float(row['conditional_embodied_mean_tCO2e']):,.0f}")
-    print(
-        "Conditional p05-p95 tCO2e: "
-        f"{float(row['conditional_embodied_p05_tCO2e']):,.0f}-"
-        f"{float(row['conditional_embodied_p95_tCO2e']):,.0f}"
-    )
+    full = by_label["full_inventory"]
+    sample = by_label["hash_sample_8000"]
+    print(f"Full Shenzhen proxy rows: {int(float(full['n_rows'])):,}")
+    print(f"Full conditional mean tCO2e: {float(full['mean_tCO2e']):,.0f}")
+    print(f"Hash-sample rows: {int(float(sample['n_rows'])):,}")
+    print(f"Hash-sample conditional mean tCO2e: {float(sample['mean_tCO2e']):,.0f}")
 
 
 if __name__ == "__main__":
