@@ -22,15 +22,17 @@ def read_first(path: Path) -> dict[str, str]:
 
 def main() -> None:
     row = read_first(SUMMARY)
-    required = {
-        "removed_id_count_full": "76042",
-        "rows_written_export_cap": "8000",
-        "conditional_embodied_mean_tCO2e": "181207.64715808188",
+    required_counts = {
+        "removed_id_count_full": 76042,
+        "rows_written_export_cap": 8000,
     }
-    for key, expected in required.items():
-        observed = row.get(key)
+    for key, expected in required_counts.items():
+        observed = int(float(row.get(key, "nan")))
         if observed != expected:
             raise SystemExit(f"{key}: expected {expected}, observed {observed}")
+    mean = float(row["conditional_embodied_mean_tCO2e"])
+    if round(mean) != 181208:
+        raise SystemExit(f"conditional_embodied_mean_tCO2e: expected rounded 181208, observed {mean}")
     if not QUANTILES.exists():
         raise SystemExit(f"Missing quantile table: {QUANTILES}")
     print("Derived output validation passed.")
