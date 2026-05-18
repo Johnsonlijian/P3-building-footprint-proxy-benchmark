@@ -1,6 +1,6 @@
-# Repository Publication Step
+# Repository Publication
 
-Target:
+Published repository:
 
 https://github.com/Johnsonlijian/P3-building-footprint-proxy-benchmark
 
