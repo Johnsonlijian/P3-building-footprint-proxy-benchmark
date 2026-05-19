@@ -30,3 +30,8 @@ https://github.com/Johnsonlijian/P3-building-footprint-proxy-benchmark
 ## v22 Update
 
 The package includes a full 76,042-row Shenzhen proxy inventory summary and a deterministic hash-ordered 8,000-row sample summary. Event-level proxy rows are not redistributed.
+
+
+## v24 Update
+
+The package now includes synthetic interval-validation diagnostics: 90% interval coverage, interval width, and interval score for 75 synthetic city-year aggregates.

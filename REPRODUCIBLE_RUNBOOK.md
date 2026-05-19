@@ -40,3 +40,13 @@ This regenerates `outputs/figures/figure_4b_shenzhen_full_vs_hash_sample_from_su
 - `outputs/derived_tables/lca_coefficient_table_v21.csv`
 
 These tables report only derived summaries, not event-level Overture rows.
+
+
+## v24 Interval Validation
+
+- `outputs/derived_tables/interval_validation_by_city_year.csv`
+- `outputs/derived_tables/interval_validation_summary.csv`
+- `outputs/derived_tables/interval_validation_bootstrap_ci.csv`
+- `outputs/figures/figure_s1_interval_validation.png`
+
+These outputs are derived from the synthetic benchmark only and do not imply Shenzhen event validation.

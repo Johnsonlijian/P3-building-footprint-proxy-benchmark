@@ -1,0 +1,5 @@
+metric,bootstrap_p025,bootstrap_p975
+coverage_90,0.6,0.8
+mean_interval_width_tCO2e,124153.47151632284,148823.78707769018
+median_relative_interval_width,0.046112786090273764,0.06298277895544598
+mean_normalized_interval_score_90,0.08548164518130028,0.1249150266460727
