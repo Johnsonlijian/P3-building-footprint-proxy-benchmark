@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1050" viewBox="0 0 1800 1050">
+<defs>
+<marker id="arrowhead" markerWidth="12" markerHeight="12" refX="10" refY="4" orient="auto" markerUnits="strokeWidth">
+<path d="M0,0 L10,4 L0,8 Z" fill="#475569"/>
+</marker>
+</defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="900.0" y="70" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="700" fill="#1b1f23" text-anchor="middle">
+<tspan x="900.0" dy="0">Proxy-to-inference audit for open building-footprint carbon screening</tspan>
+</text>
+<text x="900.0" y="122" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="400" fill="#475569" text-anchor="middle">
+<tspan x="900.0" dy="0">The figure separates what is observed, what is assumed, what is diagnosed, and what can be claimed.</tspan>
+</text>
+<rect x="80" y="220" width="245" height="205" rx="16" fill="#dbeafe" stroke="#2563eb" stroke-width="3"/>
+<text x="202.5" y="262" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" fill="#1b1f23" text-anchor="middle">
+<tspan x="202.5" dy="0">Release change</tspan>
+</text>
+<text x="202.5" y="328" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="400" fill="#334155" text-anchor="middle">
+<tspan x="202.5" dy="0">Old vs new footprint</tspan>
+<tspan x="202.5" dy="26">releases</tspan>
+</text>
+<line x1="104" y1="368" x2="301" y2="368" stroke="#2563eb" stroke-width="2"/>
+<text x="202.5" y="396" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#0f172a" text-anchor="middle">
+<tspan x="202.5" dy="0">Observed geometry signal</tspan>
+</text>
+<line x1="331" y1="322.5" x2="347" y2="322.5" stroke="#475569" stroke-width="4" marker-end="url(#arrowhead)"/>
+<rect x="355" y="220" width="245" height="205" rx="16" fill="#e0f2fe" stroke="#0284c7" stroke-width="3"/>
+<text x="477.5" y="262" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" fill="#1b1f23" text-anchor="middle">
+<tspan x="477.5" dy="0">Proxy rows</tspan>
+</text>
+<text x="477.5" y="328" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="400" fill="#334155" text-anchor="middle">
+<tspan x="477.5" dy="0">Disappeared IDs, not</tspan>
+<tspan x="477.5" dy="26">event labels</tspan>
+</text>
+<line x1="379" y1="368" x2="576" y2="368" stroke="#0284c7" stroke-width="2"/>
+<text x="477.5" y="396" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#0f172a" text-anchor="middle">
+<tspan x="477.5" dy="0">Demolition semantics</tspan>
+<tspan x="477.5" dy="22">unresolved</tspan>
+</text>
+<line x1="606" y1="322.5" x2="622" y2="322.5" stroke="#475569" stroke-width="4" marker-end="url(#arrowhead)"/>
+<rect x="630" y="220" width="245" height="205" rx="16" fill="#ccfbf1" stroke="#0f766e" stroke-width="3"/>
+<text x="752.5" y="262" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" fill="#1b1f23" text-anchor="middle">
+<tspan x="752.5" dy="0">Source gates</tspan>
+</text>
+<text x="752.5" y="328" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="400" fill="#334155" text-anchor="middle">
+<tspan x="752.5" dy="0">Eligibility, ID churn,</tspan>
+<tspan x="752.5" dy="26">edits, timing</tspan>
+</text>
+<line x1="654" y1="368" x2="851" y2="368" stroke="#0f766e" stroke-width="2"/>
+<text x="752.5" y="396" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#0f172a" text-anchor="middle">
+<tspan x="752.5" dy="0">Invalid sources stop here</tspan>
+</text>
+<line x1="881" y1="322.5" x2="897" y2="322.5" stroke="#475569" stroke-width="4" marker-end="url(#arrowhead)"/>
+<rect x="905" y="220" width="245" height="205" rx="16" fill="#fef3c7" stroke="#d97706" stroke-width="3"/>
+<text x="1027.5" y="262" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" fill="#1b1f23" text-anchor="middle">
+<tspan x="1027.5" dy="0">Carbon</tspan>
+<tspan x="1027.5" dy="27">translation</tspan>
+</text>
+<text x="1027.5" y="328" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="400" fill="#334155" text-anchor="middle">
+<tspan x="1027.5" dy="0">Area proxy, floors,</tspan>
+<tspan x="1027.5" dy="26">typology priors</tspan>
+</text>
+<line x1="929" y1="368" x2="1126" y2="368" stroke="#d97706" stroke-width="2"/>
+<text x="1027.5" y="396" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#0f172a" text-anchor="middle">
+<tspan x="1027.5" dy="0">Conditional on assumptions</tspan>
+</text>
+<line x1="1156" y1="322.5" x2="1172" y2="322.5" stroke="#475569" stroke-width="4" marker-end="url(#arrowhead)"/>
+<rect x="1180" y="220" width="245" height="205" rx="16" fill="#fde68a" stroke="#b45309" stroke-width="3"/>
+<text x="1302.5" y="262" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" fill="#1b1f23" text-anchor="middle">
+<tspan x="1302.5" dy="0">Uncertainty</tspan>
+<tspan x="1302.5" dy="27">diagnostics</tspan>
+</text>
+<text x="1302.5" y="328" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="400" fill="#334155" text-anchor="middle">
+<tspan x="1302.5" dy="0">Baseline, intervals,</tspan>
+<tspan x="1302.5" dy="26">stress tests</tspan>
+</text>
+<line x1="1204" y1="368" x2="1401" y2="368" stroke="#b45309" stroke-width="2"/>
+<text x="1302.5" y="396" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#0f172a" text-anchor="middle">
+<tspan x="1302.5" dy="0">Coefficient-only is not</tspan>
+<tspan x="1302.5" dy="22">total uncertainty</tspan>
+</text>
+<line x1="1431" y1="322.5" x2="1447" y2="322.5" stroke="#475569" stroke-width="4" marker-end="url(#arrowhead)"/>
+<rect x="1455" y="220" width="245" height="205" rx="16" fill="#dcfce7" stroke="#16a34a" stroke-width="3"/>
+<text x="1577.5" y="262" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" fill="#1b1f23" text-anchor="middle">
+<tspan x="1577.5" dy="0">Claim gate</tspan>
+</text>
+<text x="1577.5" y="328" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="400" fill="#334155" text-anchor="middle">
+<tspan x="1577.5" dy="0">Screening, audit</tspan>
+<tspan x="1577.5" dy="26">priority, validation</tspan>
+<tspan x="1577.5" dy="26">design</tspan>
+</text>
+<line x1="1479" y1="368" x2="1676" y2="368" stroke="#16a34a" stroke-width="2"/>
+<text x="1577.5" y="396" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#0f172a" text-anchor="middle">
+<tspan x="1577.5" dy="0">Only supported claims pass</tspan>
+</text>
+<circle cx="210" cy="520" r="12" fill="#2563eb"/>
+<text x="228" y="527" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" fill="#334155" text-anchor="start">
+<tspan x="228" dy="0">Observed</tspan>
+</text>
+<circle cx="520" cy="520" r="12" fill="#0f766e"/>
+<text x="538" y="527" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" fill="#334155" text-anchor="start">
+<tspan x="538" dy="0">Proxy validity</tspan>
+</text>
+<circle cx="830" cy="520" r="12" fill="#d97706"/>
+<text x="848" y="527" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" fill="#334155" text-anchor="start">
+<tspan x="848" dy="0">Assumption layer</tspan>
+</text>
+<circle cx="1140" cy="520" r="12" fill="#b45309"/>
+<text x="1158" y="527" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" fill="#334155" text-anchor="start">
+<tspan x="1158" dy="0">Diagnostic evidence</tspan>
+</text>
+<circle cx="1450" cy="520" r="12" fill="#16a34a"/>
+<text x="1468" y="527" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" fill="#334155" text-anchor="start">
+<tspan x="1468" dy="0">Permitted decision</tspan>
+<tspan x="1468" dy="36">support</tspan>
+</text>
+<rect x="150" y="650" width="1500" height="210" rx="20" fill="#f8fafc" stroke="#94a3b8" stroke-width="2"/>
+<text x="900.0" y="695" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#991b1b" text-anchor="middle">
+<tspan x="900.0" dy="0">Claims blocked without independent validation</tspan>
+</text>
+<rect x="178.0" y="728" width="319.0" height="92" rx="14" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+<text x="337.5" y="762" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#7f1d1d" text-anchor="middle">
+<tspan x="337.5" dy="0">Verified demolition</tspan>
+</text>
+<text x="337.5" y="798" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#7f1d1d" text-anchor="middle">
+<tspan x="337.5" dy="0">requires event labels or</tspan>
+<tspan x="337.5" dy="19">official records</tspan>
+</text>
+<rect x="553.0" y="728" width="319.0" height="92" rx="14" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+<text x="712.5" y="762" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#7f1d1d" text-anchor="middle">
+<tspan x="712.5" dy="0">Official city carbon</tspan>
+<tspan x="712.5" dy="24">account</tspan>
+</text>
+<text x="712.5" y="798" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#7f1d1d" text-anchor="middle">
+<tspan x="712.5" dy="0">requires inventory-boundary</tspan>
+<tspan x="712.5" dy="19">harmonization</tspan>
+</text>
+<rect x="928.0" y="728" width="319.0" height="92" rx="14" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+<text x="1087.5" y="762" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#7f1d1d" text-anchor="middle">
+<tspan x="1087.5" dy="0">Material-stock loss</tspan>
+</text>
+<text x="1087.5" y="798" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#7f1d1d" text-anchor="middle">
+<tspan x="1087.5" dy="0">requires validated event</tspan>
+<tspan x="1087.5" dy="19">semantics and material data</tspan>
+</text>
+<rect x="1303.0" y="728" width="319.0" height="92" rx="14" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+<text x="1462.5" y="762" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#7f1d1d" text-anchor="middle">
+<tspan x="1462.5" dy="0">Total uncertainty</tspan>
+<tspan x="1462.5" dy="24">interval</tspan>
+</text>
+<text x="1462.5" y="798" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#7f1d1d" text-anchor="middle">
+<tspan x="1462.5" dy="0">requires proxy, area, floor</tspan>
+<tspan x="1462.5" dy="19">and boundary errors</tspan>
+</text>
+<text x="900.0" y="930" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#0f172a" text-anchor="middle">
+<tspan x="900.0" dy="0">Main claim: the contribution is not a verified demolition-carbon estimate; it is an auditable framework that prevents</tspan>
+<tspan x="900.0" dy="30">open proxy changes from being over-read.</tspan>
+</text>
+</svg>
