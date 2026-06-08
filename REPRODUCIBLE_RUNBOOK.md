@@ -50,3 +50,12 @@ These tables report only derived summaries, not event-level Overture rows.
 - `outputs/figures/figure_s1_interval_validation.png`
 
 These outputs are derived from the synthetic benchmark only and do not imply Shenzhen event validation.
+
+## R03 Persistence Figure
+
+```bash
+pip install matplotlib numpy pandas
+python scripts/r03/rebuild_fig5_with_persistence.py
+```
+
+This regenerates `outputs/figures/r02_svg/fig5_shenzhen_proxy_boundary.svg`, `outputs/figures/r02_pdf/fig5_shenzhen_proxy_boundary.pdf`, and `outputs/figures/r02_png/fig5_shenzhen_proxy_boundary.png` from public aggregate tables only. The persistence summary is a third-release proxy-stability check, not a field-verified demolition label.

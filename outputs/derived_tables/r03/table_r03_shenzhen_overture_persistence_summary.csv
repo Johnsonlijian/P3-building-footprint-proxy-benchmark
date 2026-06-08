@@ -1,0 +1,3 @@
+persistence_status,n_rows,floor_area_m2,row_share,floor_area_share
+persistent_absent_in_check_release,76029,4272251.1270247605,0.999829041845296,0.9976260263817744
+reappeared_in_check_release,13,10166.34610343445,0.0001709581547039794,0.002373973618225548

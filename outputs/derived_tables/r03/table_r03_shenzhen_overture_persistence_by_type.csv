@@ -1,0 +1,5 @@
+persistence_status,building_type,n_rows,floor_area_m2
+persistent_absent_in_check_release,residential_rc,76015,4141500.6712445803
+persistent_absent_in_check_release,commercial,13,103005.22197050104
+persistent_absent_in_check_release,industrial,1,27745.23380967925
+reappeared_in_check_release,residential_rc,13,10166.34610343445

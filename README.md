@@ -12,7 +12,8 @@ This repository contains the public no-raw-data reproducibility package for the 
 - Small validation and plotting scripts.
 - R02 vector figure outputs for the npj Urban Sustainability target revision: SVG/PDF/PNG for Figures 1-5.
 - R02 derived benchmark, interval, stress-test, and Shenzhen proxy-summary tables.
-- Runbook, citation metadata, and licence.
+- R03 aggregate Overture persistence-check summaries and the updated Figure 5 rebuild script.
+- Runbook, citation metadata, and license.
 
 ## Evidence Boundary
 
@@ -50,8 +51,16 @@ This local package adds the strongest current no-raw-data reproducibility layer 
 
 Active submission manuscripts, internal rejection-risk reviews, cover letters, response drafts, raw third-party data, and event-level Overture proxy rows are intentionally excluded.
 
-The intended public remote remains:
+## R03 Persistence Update
+
+The package now includes aggregate Shenzhen Overture third-release persistence summaries and an updated Figure 5. Of 76,042 disappeared-ID proxy rows observed between Overture releases `2026-03-18.0` and `2026-04-15.0`, 76,029 remained absent in release `2026-05-20.0` and 13 reappeared. This is a proxy-stability check, not demolition validation.
+
+Public files added for this update:
+
+- `scripts/r03/rebuild_fig5_with_persistence.py`
+- `outputs/derived_tables/r03/table_r03_shenzhen_overture_persistence_summary.csv`
+- `outputs/derived_tables/r03/table_r03_shenzhen_overture_persistence_by_type.csv`
+
+The public remote is:
 
 https://github.com/Johnsonlijian/P3-building-footprint-proxy-benchmark
-
-Pushing or publishing the refreshed package requires explicit author approval.
