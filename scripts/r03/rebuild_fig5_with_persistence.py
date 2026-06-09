@@ -9,6 +9,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
+plt.rcParams["svg.hashsalt"] = "fig5_shenzhen_proxy_boundary"
 
 ROOT = Path(__file__).resolve().parents[2]
 TABLE_R02 = ROOT / "outputs" / "derived_tables" / "r02"
@@ -38,8 +39,8 @@ def style_axes(ax) -> None:
 def savefig(fig: plt.Figure, stem: str) -> None:
     for directory in [SVG, PDF, PNG]:
         directory.mkdir(parents=True, exist_ok=True)
-    fig.savefig(SVG / f"{stem}.svg", bbox_inches="tight")
-    fig.savefig(PDF / f"{stem}.pdf", bbox_inches="tight")
+    fig.savefig(SVG / f"{stem}.svg", bbox_inches="tight", metadata={"Date": None})
+    fig.savefig(PDF / f"{stem}.pdf", bbox_inches="tight", metadata={"CreationDate": None, "ModDate": None})
     fig.savefig(PNG / f"{stem}.png", dpi=300, bbox_inches="tight")
     plt.close(fig)
 
