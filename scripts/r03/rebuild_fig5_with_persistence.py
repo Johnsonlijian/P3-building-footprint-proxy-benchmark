@@ -87,8 +87,9 @@ def main() -> None:
     style_axes(ax)
     for i, v in enumerate(counts):
         pct = 100 * v / sum(counts)
-        ax.text(i, v * (1.15 if v > 100 else 1.7), f"{v:,}\n({pct:.2f}%)", ha="center", va="bottom", fontsize=7.5)
-    ax.text(0.5, 0.18, "2026-05-20.0 check\nreduces single-release churn", transform=ax.transAxes, ha="center", va="center", fontsize=7.5, bbox=dict(boxstyle="round,pad=0.25", facecolor="white", edgecolor=PALETTE["light_gray"]))
+        y_text = v * 1.15 if v > 100 else 32
+        ax.text(i, y_text, f"{v:,}\n({pct:.2f}%)", ha="center", va="bottom", fontsize=7.5, bbox=dict(boxstyle="round,pad=0.15", facecolor="white", edgecolor="none", alpha=0.85))
+    ax.text(0.5, 0.42, "2026-05-20.0 check\nreduces single-release churn", transform=ax.transAxes, ha="center", va="center", fontsize=7.5, bbox=dict(boxstyle="round,pad=0.25", facecolor="white", edgecolor=PALETTE["light_gray"]))
 
     ax = axes[3]
     labels = ["New-release\ncontrol", "Tiny proxy\ngeometry", "No new\noverlap"]
